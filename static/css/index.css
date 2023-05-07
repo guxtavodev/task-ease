@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root{
+    --fontTitle: 800;
+    --letras: 400;
+    --subtitle: 600;
+}
+
+body{
+    background-color: #000;
+    background-image: url(../img/aurora.png);
+    color:aliceblue;
+    font-family: 'Poppins', Arial;
+    padding-bottom: 4em;
+    background-size: 500%;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 3em;
+  align-items: center;
+}
+
+header nav p strong{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+main{
+    margin: 0 auto;
+    width: 70%;
+    background-color: #0d0d0d;
+    padding: 1em;
+    border-radius: 6px;
+    margin-top: 2em;
+}
+
+.task{
+  display: flex;
+    margin-top: 1em;
+    background-color: rgba(255, 255, 255, 0.1); /* Define a cor de fundo com transparência */ 
+    backdrop-filter: blur(5px); /* Define o efeito de desfoque */ 
+    border-radius: 10px;
+    padding: 5px;
+gap: 0.5em;
+
+}
+
+.task .infos p strong{
+    font-weight: 600;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  gap: 0.9em;
+}
+
+.task input{
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: #fff;
+  transition: 0.1s;
+}
+
+.task input:checked{
+    background: #05F290;
+    transition: 0.1s;
+}
+
+.form-g{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-top: 1em;
+}
+
+.form-g input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #009c5b;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.sidebar button{
+  margin-top: 0;
+  padding: 5px;
+}
+
+.form-g input[type='date']{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task{
+    margin-top: 1em;
+}
+
+.list-todo{
+  align-items: center;
+}
+
+.list-todo h2, .abas{
+  text-align: center;
+}
+
+.abas {
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-around;
+  margin-top: 0.5em;
+}
+
+.abas p {
+  font-weight: 600;
+  background: #009c5b;
+  padding: 4px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.sidebar-icon { 			
+  font-size: 30px; 			
+  cursor: pointer; 			
+  
+  top: 10px; 			
+  right: 10px; 		
+  
+} 		 		
+.sidebar { 			
+  position: fixed; 			
+  top: 0; 			
+  right: -290px; 			
+  width: 250px; 			
+  height: 100%; 			
+  background-color: #000; 			
+  transition: all 0.3s ease-in-out; 	
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 1em;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+} 		 		
+.sidebar.show { 			
+  right: 0; 		
+  
+} 		 		
+.close-btn { 			
+  
+  top: 10px; 			
+  left: 10px; 			
+  font-size: 20px; 			
+  cursor: pointer; 		
+  
+}
+
+.sidebar p {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  }
+
+@media only screen and (max-width: 1000px) { 
+ header nav {
+   display: flex;
+   gap: 0.5em;
+ }
+}

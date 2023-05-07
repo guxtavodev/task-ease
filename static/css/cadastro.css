@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root{
+    --fontTitle: 800;
+    --letras: 400;
+    --subtitle: 600;
+}
+
+body{
+    background-color: #000;
+    background-image: url(../img/aurora.png);
+    color:aliceblue;
+    font-family: 'Poppins', Arial;
+}
+
+main{
+    margin: 0 auto;
+    width: 50%;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-g{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+h1{
+    text-align: center;
+}
+
+.form-g input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+main button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #009c5b;
+    color: #fff;
+    cursor: pointer;
+}
+
+small a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1000px) { 
+ main {
+   width: 80%;
+ }
+}

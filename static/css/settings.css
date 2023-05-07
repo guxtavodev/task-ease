@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root{
+    --fontTitle: 800;
+    --letras: 400;
+    --subtitle: 600;
+}
+
+body{
+    background-color: #000;
+    background-image: url(../img/aurora.png);
+    color:aliceblue;
+    font-family: 'Poppins', Arial;
+    padding-bottom: 4em;
+    background-size: 500%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+  font-family: 'Poppins';
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+header nav p strong{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+main{
+    margin: 0 auto;
+    width: 70%;
+    background-color: #0d0d0d;
+    padding: 1em;
+    border-radius: 6px;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+main button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #009c5b;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+
+    font-weight: 600;
+}
+
+.sidebar-icon { 			
+  font-size: 30px; 			
+  cursor: pointer; 			
+  
+  top: 10px; 			
+  right: 10px; 		
+  
+} 		 		
+.sidebar { 			
+  position: fixed; 			
+  top: 0; 			
+  right: -290px; 			
+  width: 250px; 			
+  height: 100%; 			
+  background-color: #000; 			
+  transition: all 0.3s ease-in-out; 	
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 1em;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+} 		 		
+.sidebar.show { 			
+  right: 0; 		
+  
+} 		 		
+.close-btn { 			
+  
+  top: 10px; 			
+  left: 10px; 			
+  font-size: 20px; 			
+  cursor: pointer; 		
+  
+}
+
+.form-t{
+  padding: 3px;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+}
+
+@media only screen and (max-width: 1000px) { 
+ header nav {
+   display: flex;
+   gap: 0.5em;
+ }
+  }
