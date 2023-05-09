@@ -1,4 +1,4 @@
-from main import app 
+from app import app 
 from models import Users, Task 
 from flask import request, render_template, jsonify
 import sqlite3 as sql
