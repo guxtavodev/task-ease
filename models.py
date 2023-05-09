@@ -1,4 +1,4 @@
-from main import app 
+from app import app 
 import sqlite3 as sql 
 from datetime import datetime
 import time as tm 
